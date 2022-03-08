@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    animation: gradient 10s ease infinite;
+    background: linear-gradient( -45deg,yellow ,#ee7752, #e73c7e, #34d5ab, #23d5ab) no-repeat;
+    background-size: 300% 300%;
+    font-family: sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 90vh;
+    font-size: 300%;
+    margin: 30px; 
+}
+
+.box {
+    background-color: red;
+    height: 10px;
+    width: 690px;
+
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.box:hover {
+    background-color:rgb(98, 0, 128);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
